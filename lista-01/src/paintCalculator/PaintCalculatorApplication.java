@@ -16,10 +16,22 @@ public class PaintCalculatorApplication {
         System.out.println("Digite a largura...:");
         paintCalculator.setLargura(leitura.nextFloat());
 
-        PaintCalculator calculoMetragem = metodosPaintCalculator.calculaAreaComodo(paintCalculator.getLargura(),
-                paintCalculator.getAltura());
+
+        PaintCalculator calculoMetragem = metodosPaintCalculator.calculaAreaComodo(paintCalculator.getComprimento(),
+                paintCalculator.getLargura(), paintCalculator.getAltura());
 
         System.out.println("O tamanho da sua área para pintura é de " + calculoMetragem.getMetrosQuadrados() + " m² ");
+
+        System.out.println("A quantidade de galões utilizados serão de " + Math.ceil(calculoMetragem.getQuantidadeGaloes()) + " galões.");
+
+        System.out.println("O valor gasto com os galões de tinta será de R$.: " +
+                Math.round(calculoMetragem.getPrecoQuantidadeGaloes()) + ",00");
+
+        System.out.println("----------------------------------------------------------------------------");
+
+        System.out.println("O custo para pintar uma sala de " + calculoMetragem.getLargura() + " por " +
+                calculoMetragem.getAltura() + " metros, com tetos de " + calculoMetragem.getComprimento() +
+                " metros é de R$ " + Math.round(calculoMetragem.getPrecoQuantidadeGaloes()) + " reais =D ");
 
 
     }

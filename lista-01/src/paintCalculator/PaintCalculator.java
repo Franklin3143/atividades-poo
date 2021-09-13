@@ -6,6 +6,8 @@ public class PaintCalculator {
     private float largura;
     private float altura;
     private float metrosQuadrados;
+    private float quantidadeGaloes;
+    private float precoQuantidadeGaloes;
 
     public float getComprimento() {
         return comprimento;
@@ -37,5 +39,21 @@ public class PaintCalculator {
 
     public void setMetrosQuadrados(float metrosQuadrados) {
         this.metrosQuadrados = metrosQuadrados;
+    }
+
+    public float getQuantidadeGaloes() {
+        return quantidadeGaloes;
+    }
+
+    public void setQuantidadeGaloes(float quantidadeGaloes) {
+        this.quantidadeGaloes = quantidadeGaloes;
+    }
+
+    public float getPrecoQuantidadeGaloes() {
+        return precoQuantidadeGaloes;
+    }
+
+    public void setPrecoQuantidadeGaloes(float precoQuantidadeGaloes) {
+        this.precoQuantidadeGaloes = precoQuantidadeGaloes;
     }
 }
