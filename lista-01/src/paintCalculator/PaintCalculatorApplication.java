@@ -33,6 +33,5 @@ public class PaintCalculatorApplication {
                 calculoMetragem.getAltura() + " metros, com tetos de " + calculoMetragem.getComprimento() +
                 " metros é de R$ " + Math.round(calculoMetragem.getPrecoQuantidadeGaloes()) + " reais =D ");
 
-
     }
 }
